@@ -11,4 +11,3 @@
 ## <span id="915">鸣谢：</span>
 - [MoeGoe_GUI]https://github.com/CjangCjengh/MoeGoe_GUI
 - [Pretrained models]https://github.com/CjangCjengh/TTSModels
-- [PyChatGPT]https://github.com/terry3041/pyChatGPT
