@@ -1,5 +1,6 @@
 import logging
 from json import loads
+import torch
 from torch import load, FloatTensor
 from numpy import float32
 import librosa
@@ -38,7 +39,8 @@ class HParams():
 
 
 def load_checkpoint(checkpoint_path, model):
-  checkpoint_dict = load(checkpoint_path, map_location='cpu')
+  device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+  checkpoint_dict = load(checkpoint_path, map_location=device)
   iteration = checkpoint_dict['iteration']
   saved_state_dict = checkpoint_dict['model']
   if hasattr(model, 'module'):
