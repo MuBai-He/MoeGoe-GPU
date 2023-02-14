@@ -170,6 +170,7 @@ if __name__ == '__main__':
 
                 write(out_path, hps_ms.data.sampling_rate, audio)
                 print('Successfully saved!')
+                torch.cuda.empty_cache()
                 ask_if_continue()
         else:
             import os
@@ -231,6 +232,7 @@ if __name__ == '__main__':
 
                 write(out_path, hps_ms.data.sampling_rate, audio)
                 print('Successfully saved!')
+                torch.cuda.empty_cache()
                 ask_if_continue()
     else:
         model = input('Path of a hubert-soft model: ')
