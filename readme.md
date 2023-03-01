@@ -6,8 +6,8 @@
 </p>
 
 ## Run
-### 下载最新的release，运行MoegoeGUI（图形界面）或Moegoe.exe(CMD窗口)
-### 使用CUDA加速需要有Nvidia显卡并确保驱动版本兼容CUDA 11
+- 下载最新的release，运行MoegoeGUI（图形界面）或Moegoe.exe(CMD窗口)
+- 使用CUDA加速需要有Nvidia显卡并确保驱动版本兼容CUDA 11
 
 
 ## <span id="915">鸣谢：</span>
